@@ -8,8 +8,34 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+    <label for="fname">First Name:</label>
+<input type="text" id="fname" name="First Name"><br>
+
+<label for="lname">Last Name:</label>
+<input type="text" id="lname" name="Last Name"><br>
+
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="Phone Number"><br>
+
+<label for="email">Email ID:</label>
+<input type="email" id="email" name="Email ID"><br>
+
+<button onclick="displayResult()">Submit</button>
+
+<script>
+function displayResult() {
+  const firstName = document.getElementById("fname").value;
+  const lastName = document.getElementById("lname").value;
+  const phoneNumber = document.getElementById("phone").value;
+  const email = document.getElementById("email").value;
+  const result = "First Name: " + firstName + "\n" +
+                 "Last Name: " + lastName + "\n" +
+                 "Phone Number: " + phoneNumber + "\n" +
+                 "Email ID: " + email;
+  alert(result);
+}
 </script>
+
 
 </body>
 
